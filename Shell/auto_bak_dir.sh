@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bak_from_name="etc"               
+bak_from_name="etc"                
 bak_from_dir="/etc"               
 bak_to_dir="/var/backup"          
 bak_dir="${bak_to_dir}${bak_from_dir}.$(date +%Y%m%d)"                        
