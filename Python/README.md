@@ -19,6 +19,7 @@ try:
     print __doc__
 except:
     print '记录学习及工作的Python代码'
+    print '不断的学习,不断的实例代码'
     print '写出具有实际意义的程序'
 
 ```
