@@ -63,8 +63,8 @@ def usage():
     GITV 1.0 This is a .gitignore file builder
           Author By vforbox, 4 Arp 2016\n
     Usage:
-\tpython gitv <list | ls>   - 列出支持的语言
-\tpython gitv <Name>        - 在当前目录生成指定语言的过滤文件\n
+\tpython gitv.py <list | ls>   - 列出支持的语言
+\tpython gitv.py <Name>        - 在当前目录生成指定语言的过滤文件\n
         	'''
 
 if __name__ == '__main__':
