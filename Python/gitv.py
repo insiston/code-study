@@ -56,15 +56,15 @@ def usage():
 	print u'''
         ╭━━╮╭━━╮╭━━╮╭╮╭╮
         ┃╭━╯╰╮╭╯╰╮╭╯┃┃┃┃
-        ┃┃╭╮  ┃┃  　┃┃  ┃┃┃┃
-        ┃┃┃┃  ┃┃　  ┃┃  ┃┃┃┃
-        ┃╰╯┃╭╯╰╮  ┃┃  ╰╮╭╯
-        ╰━━╯╰━━╯  ╰╯　  ╰╯　
+        ┃┃╭╮ ┃┃  ┃┃ ┃┃┃┃
+        ┃┃┃┃ ┃┃　┃┃ ┃┃┃┃
+        ┃╰╯┃╭╯╰╮ ┃┃ ╰╮╭╯
+        ╰━━╯╰━━╯ ╰╯  ╰╯　
     GITV 1.0 This is a .gitignore file builder
           Author By vforbox, 4 Arp 2016\n
     Usage:
-\tgitv <list | ls>   - 列出支持的语言
-\tgitv <Name>        - 在当前目录生成指定语言的过滤文件\n
+\tpython gitv <list | ls>   - 列出支持的语言
+\tpython gitv <Name>        - 在当前目录生成指定语言的过滤文件\n
         	'''
 
 if __name__ == '__main__':
@@ -94,8 +94,3 @@ if __name__ == '__main__':
 	for i in tqdm(range(100)):
 		time.sleep((time.clock() - start) / 100)
 	print "\n(%.2f seconds)" %(time.clock() - start)
-		
-
-
-
-
