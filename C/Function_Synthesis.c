@@ -35,7 +35,7 @@ double getTaxiPrice(int hours, int distance)
 	{
 		totalPrice = startPrice;
 	}
-	totalPrice++;	//加一块钱的燃油费
+	totalPrice++;	//加1块钱的燃油费
 	return totalPrice;
 }
 
