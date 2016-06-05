@@ -1,9 +1,9 @@
-#include <stdio.h>
-
-/* 
+/*
  * 递归练习
  * 要求用户输入一个大于0的数,如何不大于0一值提示,知道大于0为止
  */
+
+#include <stdio.h>
 
 void scanNumber(); /* ISO/ANSI C函数原型 */
 
