@@ -9,8 +9,8 @@ void replaceMax(int arr[], int value)
 	{
 		if (arr[i]>max)
 		{
-			max = arr[i];       //½«Êı×éÖĞ½Ï´óµÄÊı¸³Öµ¸ømax
-			index = i;			//¼ÇÂ¼µ±Ç°Ë÷Òı
+			max = arr[i];       //å°†æ•°ç»„ä¸­è¾ƒå¤§çš„æ•°èµ‹å€¼ç»™max
+			index = i;	    //è®°å½•å½“å‰ç´¢å¼•
 		}
 	}
 	arr[index] = value;
@@ -21,12 +21,12 @@ int main()
 	int arr1[] = { 10,41,3,12,22 };
 	int arr2[] = { 1,2,3,4,5 };
 	int i;
-	replaceMax(arr1,arr2[0]); //½«Êı×éarr1ºÍÊı×éarr2µÄµÚÒ»¸öÔªËØ´«Èëº¯ÊıÖĞ
+	replaceMax(arr1,arr2[0]);     //å°†æ•°ç»„arr1å’Œæ•°ç»„arr2çš„ç¬¬ä¸€ä¸ªå…ƒç´ ä¼ å…¥å‡½æ•°ä¸­
 	for (i = 0;i<5;i++)
 	{
 		printf("%d\n\n", arr1[i]);
 	}
-	printf("°´ÈÎÒâ½áÊø³ÌĞò...");
+	printf("æŒ‰ä»»æ„ç»“æŸç¨‹åº...");
 	getchar();
 	return 0;
 }
