@@ -1,9 +1,9 @@
-#include <stdio.h>
-#define N 10
-
 /* 在一个长度为10的整型数组里面,保存了班级10个学生的考试成绩
  * 要求编写5个函数,分别实现计算考试的总分,最高分,最低分,平均分和考试成绩降序排序
-*/
+ */
+
+#include <stdio.h>
+#define N 10
 
 //打印分数 
 void printScore(int score[])
