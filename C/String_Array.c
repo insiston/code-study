@@ -1,8 +1,8 @@
-#include <stdio.h>
-
 /* 字符串与数组
- * 字符串就是由多个字符组合而成的一段话 
+ * 字符串就是由多个字符组合而成的一段话
  */
+
+#include <stdio.h>
 
 void say(char string[],char _string[])
 {
