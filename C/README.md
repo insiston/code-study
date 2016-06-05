@@ -1,7 +1,6 @@
 
 ```
 /*
-
 	╭━━╮
 	┃╭━╯
 	┃┃　　
@@ -10,7 +9,6 @@
 	╰━━╯
 
 # http://vforbox.net
-
 */
 
 #include<stdio.h>
