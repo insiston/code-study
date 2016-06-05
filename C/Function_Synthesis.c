@@ -38,6 +38,7 @@ double getTaxiPrice(int hours, int distance)
 	totalPrice++;	//加一块钱的燃油费
 	return totalPrice;
 }
+
 int main()
 {
 	int moring = 9;	//定义上午打车时间
