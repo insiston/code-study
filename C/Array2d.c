@@ -3,7 +3,8 @@
 #define COLS 4
 
 void sum_rows(int ar[][COLS], int rows);
-void sum_cols(int [][COLS], int);
+void sum_cols(int [][COLS], int);        // 函数原型定义可以省略名称 * = []
+int sum2d(int (*ar)[COLS], int rows);    // (*ar) = ar[] or = *ar
 
 int main() {
     int junk[ROWS][COLS] = {
@@ -33,7 +34,7 @@ void sum_rows(int ar[][COLS], int rows)
     printf("---------------\n");
 }
 
-void sum_cols(int (*ar)[COLS], int rows)
+void sum_cols(int ar[][COLS], int rows)
 {
     int r;
     int c;
@@ -48,7 +49,7 @@ void sum_cols(int (*ar)[COLS], int rows)
     printf("---------------\n");
 }
 
-int sum2d(int ar[][COLS], int rows)
+int sum2d(int (*ar)[COLS], int rows)
 {
     int r;
     int c;
