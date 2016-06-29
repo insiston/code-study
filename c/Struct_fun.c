@@ -1,5 +1,5 @@
 /*
- * struct.c - 结构作为函数参数
+ * struct_fun.c - 结构作为函数参数
  *
  * Author: vforbox <vrobox@gmail.com>
  * Create Date: 2016
