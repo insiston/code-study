@@ -2,7 +2,7 @@
  * struct.c - 结构体练习
  * 结构体是用户自定义的可用数据类型,允许存储不同类型的数据项
  *
- * Author: vforbox <vrobox@gmail.com>
+ * Author: vforbox <vforbox@gmail.com>
  * Create Date: 2016 
  */
 
