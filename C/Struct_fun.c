@@ -1,7 +1,7 @@
 /*
  * struct_fun.c - 结构作为函数参数
  *
- * Author: vforbox <vrobox@gmail.com>
+ * Author: vforbox <vforbox@gmail.com>
  * Create Date: 2016
  */
 
