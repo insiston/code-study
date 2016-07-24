@@ -99,8 +99,8 @@ def backend_read(file):
 
     server_flag = False     # 初始化server判断标志位
 
-    with open(file,'r') as hapoxy:              # 打开haproxy配置文件
-        for line in hapoxy:
+    with open(file,'r') as haproxy:              # 打开haproxy配置文件
+        for line in haproxy:
             server_dict = OrderedDict()         # 定义一个有序字典
             line = line.strip('\n')
 
@@ -189,7 +189,7 @@ if __name__ == '__main__':
 
     (backend_name,flag) = ('',True) # 初始化返回的名称和判断标志位
 
-    hapoxy_file = "hapoxy.cfg"           # 指定haproxy配置文件
+    haproxy_file = "haproxy.cfg"           # 指定haproxy配置文件
     show_haproxy_name_dict = {}     # 初始化backend显示字典
     show_haproxy_server_dict = {}   # 初始化server显示字典
 
@@ -203,7 +203,7 @@ if __name__ == '__main__':
         print "\033[35m\t 欢迎访问 haproxy 配置文件管理平台\033[0m\n"
         print "\t┏------------------------------┓"
         print "\t|\t\033[35mbackend 列表信息\033[0m"
-        (show_haproxy_name_dict,show_haproxy_server_dict) = backend_read(hapoxy_file)
+        (show_haproxy_name_dict,show_haproxy_server_dict) = backend_read(haproxy_file)
 
         print '''
         ┏------------------------------┓
@@ -268,7 +268,7 @@ if __name__ == '__main__':
                         add_commit = raw_input("确认是否添加此条目[y|n]: ")
                         if add_commit == 'y' or add_commit == 'Y':      # 确认添加服务条目,并回写配置文件
                             show_haproxy_server_dict[backend_name].append(add_server_dict)
-                            backend_server_handle(hapoxy_file,show_haproxy_server_dict)
+                            backend_server_handle(haproxy_file,show_haproxy_server_dict)
                         else:
                             add_flag = False        # 否则退出本次循环
                     else:
@@ -318,7 +318,7 @@ if __name__ == '__main__':
                                 modify_commit = raw_input("确认是否添加此条目[y|n]: ")
                                 if modify_commit == 'y' or modify_commit == 'Y':      # 确认修改服务条目,并回写配置文件
                                     show_haproxy_server_dict[backend_name][server_index - 1] = modify_server_dict
-                                    backend_server_handle(hapoxy_file,show_haproxy_server_dict)
+                                    backend_server_handle(haproxy_file,show_haproxy_server_dict)
                                     modify_server_dict = False
                                 else:           # 否则退出本次循环
                                     modify_server_dict = False
@@ -370,7 +370,7 @@ if __name__ == '__main__':
                             del_commit = raw_input("确认是否删除此条目[y|n]: ")
                             if del_commit == 'y' or del_commit == 'Y':      # 确认修改服务条目,并回写配置文件
                                 del show_haproxy_server_dict[backend_name][server_index - 1]
-                                backend_server_handle(hapoxy_file,show_haproxy_server_dict)
+                                backend_server_handle(haproxy_file,show_haproxy_server_dict)
                                 server_del_flag = False
                             else:           # 否则退出本次循环
                                 server_del_flag = False
